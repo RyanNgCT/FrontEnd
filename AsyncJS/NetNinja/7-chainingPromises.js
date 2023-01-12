@@ -25,10 +25,16 @@ const getTodos = (resource) => {
     });
 };
 
-getTodos('todos/mario.json').then(data => {
-    console.log(data);
-}).catch(error => {
-    console.log(error)
+getTodos('todos/mario.json')
+    .then(data => 
+    {
+        console.log('Promise 1 resolved', data);
+        return getTodos('todos/luigi.json');
+    }).then(data => {
+        console.log('Promise 2 resolved', data);
+    // only one catch block is required
+    }).catch(error => {
+    console.log('Promise failed, ', error);
 });
 
 console.log("Test");
