@@ -2,10 +2,10 @@
 // format: fetch(<resource_to_fetch>)
 
 // modify resource as needed
-fetch('todos/luigis.json')
+fetch('todos/luigi.json')
     .then(responseData => {
         if (responseData.status == '200'){
-            // console.log("Resolved:", responseData);
+            //console.log("Resolved:", responseData); // promise object is returned
             return responseData.json();
         }
         else

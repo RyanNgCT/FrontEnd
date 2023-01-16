@@ -45,7 +45,7 @@ const promiseHelper = () => {
     return promise;
 }
 
-
+// same as promise.then(data).catch(error)
 promiseHelper().then(data => {
     console.log(data);
 }, error => {
