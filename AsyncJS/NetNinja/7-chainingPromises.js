@@ -9,7 +9,7 @@ const getTodos = (resource) => {
         {
             if(request.status === 200)
             {
-                const data = JSON.parse(request.responseText) // alt is stringify -> convert to string with '\n's
+                const data = JSON.parse(request.responseText); // alt is stringify -> convert to string with '\n's
                 resolve(data); // no error, give data.
             }
             else
@@ -19,7 +19,7 @@ const getTodos = (resource) => {
         }
 
     // getting data from local file
-    request.open('GET', resource)
+    request.open('GET', resource);
 
     request.send();
     });

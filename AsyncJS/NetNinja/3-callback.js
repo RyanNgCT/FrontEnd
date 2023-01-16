@@ -34,7 +34,7 @@ getTodos((error, data) => {
         console.log(error);
     }
     else{
-        console.log(data) // retyrns an array of objects
+        console.log(data); // retyrns an array of objects
     }
 });
 

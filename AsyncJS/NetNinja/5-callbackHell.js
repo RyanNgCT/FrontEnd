@@ -7,7 +7,7 @@ const getTodos = (resource, callback) => {
     // change eventListener to onload
     request.onload = () => {
         if(request.status === 200){
-            const data = JSON.parse(request.responseText) // alt is stringify -> convert to string with '\n's
+            const data = JSON.parse(request.responseText); // alt is stringify -> convert to string with '\n's
             callback(undefined, data); // no error, give data.
         }
         else{
@@ -25,7 +25,7 @@ const getTodos = (resource, callback) => {
 };
 
 
-console.log("Test");
+console.log("Test 1");
 
 
 // populate with a callback function

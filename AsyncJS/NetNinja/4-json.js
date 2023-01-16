@@ -30,7 +30,7 @@ const getTodos = (callback) => {
     //request.open('GET', "https://jsonplaceholder.typicode.com/posts/")
 
     // getting data from local file
-    request.open('GET', './todos/todos.json')
+    request.open('GET', './todos/todos.json');
 
     request.send();
 };
@@ -44,7 +44,7 @@ getTodos((error, data) => {
         console.log(error);
     }
     else{
-        console.log(data)
+        console.log(data);
     }
 });
 

@@ -17,14 +17,14 @@ request.addEventListener('readystatechange', () => {
         console.log(request.responseText);
     }
     else if (request.readyState === 4){
-        console.log("Could not fetch data...")
+        console.log("Could not fetch data...");
     }
 });
 
 // Step 2
 // open() : sets up the request to be sent
 // parameters: HTTP Method, uri
-request.open('GET', "https://jsonplaceholder.typicode.com/posts/")
+request.open('GET', "https://jsonplaceholder.typicode.com/posts/");
 
 // send() : sends the request
 request.send();
