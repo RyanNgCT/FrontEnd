@@ -1,3 +1,6 @@
+// instances of callbackHell (triangle of doom)
+// -> Use data returned from 1st API request (response of first API) to retrieve data from 2nd API
+
 const getTodos = (resource, callback) => {
     const request = new XMLHttpRequest();
 
