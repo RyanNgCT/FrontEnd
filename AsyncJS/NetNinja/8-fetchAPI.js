@@ -1,7 +1,6 @@
 // fetch api
 // format: fetch(<resource_to_fetch>)
 
-
 // modify resource as needed
 fetch('todos/luigis.json')
     .then(responseData => {
@@ -20,3 +19,6 @@ fetch('todos/luigis.json')
 });
 
 // Steps:
+// 1. fetch the data
+// 2. take response and return response.json
+// 3. fire a function to retrieve the data
